@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    border: 1px solid #f0f0f0;
+}
+
+h1 {
+    color: #744210;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+p {
+    color: #2D3748;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#btc-price {
+    font-weight: 600;
+    color: #744210;
+    background-color: #FEF3C7;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    margin: 0.8rem 0;
+    border: 2px solid #D6B656;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #FFFBEB;
+}
+
+input:focus {
+    border-color: #B7791F;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(183, 121, 31, 0.1);
+}
+
+input::placeholder {
+    color: #718096;
+}
+
+button {
+    background-color: #B7791F;
+    color: #ffffff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin: 0.8rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover {
+    background-color: #975A16;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(183, 121, 31, 0.15);
+}
+
+button:active {
+    transform: translateY(0);
+    background-color: #744210;
+}
+
+h2 {
+    color: #2D3748;
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+#btc-result {
+    color: #744210;
+    font-weight: 700;
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    background-color: #FEF3C7;
+    border-radius: 6px;
+    margin-left: 0.5rem;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1.5rem;
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input,
+    button {
+        padding: 0.8rem;
+    }
+}
